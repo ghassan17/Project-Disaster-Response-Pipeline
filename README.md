@@ -15,12 +15,12 @@
 
 
 ## **Summary of Project**
-Disaster Response Pipeline 
-In this project you're going to be analysing thousands of real messages provided by figure8 that were sent through natural disasters either via social media or directly to disaster response organisations. You’ll building an ETL pipeline that processes message and category data from CSV files and load them into a SQL database, which your ML pipeline will then read from to create and save a multi-output supervised learning model. 
+#### Disaster Response Pipeline 
+This project analyses thousands of real messages provided by Appen (previously known as Figure8) that were sent during natural disasters either via social media or directly to disaster response organisations. An ETL pipeline has been built to process message and category data from CSV files which are then loaded into a SQL database. A ML pipeline is created to read from the database and save a multi-output supervised learning model. 
  
-Then your web app will extract data from this database to provide data visualisation and use your model to classify new messages for 36 categories. 
+The web app will extract data from this database to provide data visualisation and uses the model to classify new messages for the 36 categories. 
  
-Machine learning is critical to helping different organisations understand which messages are relevant to them and which messages to prioritise During these disasters is when we have the least capacity to filter out messages that matter and find basic messages such as using keywords searches to provide trivial results.
+Machine learning is critical to helping different organisations understand which messages are relevant to them, and which messages to prioritise when a disaster occurs. During a disaster is when there is minimum capacity to filter out messages that matter and find basic messages (using keywords searches) to provide trivial results.
 
 ## **Project Structure** 
 
@@ -80,16 +80,18 @@ The project includes a web app where an emergency worker can input a new message
       
  ## **How To Run Python Scripts**
 
-To execute the app follow the instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse_DB.db`
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
     - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse_DB.db models/classifier.pkl`
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+2. Go to `app` directory: `cd app`
+
+3. Run your web app: `python run.py`
+
+4. Click the `PREVIEW` button to open the homepage
 
 
 
