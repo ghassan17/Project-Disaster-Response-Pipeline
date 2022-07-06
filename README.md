@@ -61,14 +61,16 @@ Type text into the app, and this will return classification results for all 36 c
    └── disaster_messages.csv # data to process  
   
 ├── ETL-Pipeline-Peparation:
-   └── ETL Pipeline Preparation.ipynb
+   └── ETL Pipeline Preparation.ipynb #initial template 
    └── Disaster_Response_DB.db
 
 ├── ML-Pipeline-Peparation:
       └──  classifer.pkl #this will be produced once the pipeline is excecuted 
-      └── ML Pipeline Preparation.ipynb
+      └── ML Pipeline Preparation.ipynb #initial template 
+      
 ├── models:
       └── train_classifier.py #file contain the script to create ML pipeline
+      
 ├── app:
     │ └── templates
     │  ├── go.html
