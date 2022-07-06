@@ -12,7 +12,7 @@
 
 ## **Installations**
 
- sqlite3 · pickle · pandas · sys · sklearn · nltk · sqlalchemy · flask · json · plotly · re · numpy 
+ sqlite3 · pickle · pandas · sys · sklearn · nltk · sqlalchemy · flask · json · plotly · re · numpy · joblib
 
 
 ## **Summary of Project**
@@ -48,7 +48,8 @@ A Python script, `train_classifier.py`, writes a machine learning pipeline that:
 A jupyter notebook `ML Pipeline Preparation` was used to do EDA to prepare the train_classifier.py python script. 
 
 3. **Flask Web App**
-The project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
+The web app, run.py, displays visualisations that describe the training data. 
+Type text into the app, and this will return classification results for all 36 categories related to the input message.
  
 
 ## **Files**
@@ -105,7 +106,7 @@ http://disaster-response-app.s3-website.eu-west-2.amazonaws.com
 ## **Future Work**
 
 How to deal with imbalanced data: 
--	Use a confusion matrix to see if rare cases are correctly classified equal proportion. 
+-	Use a confusion matrix to see if rare cases are correctly classified. 
 -	Collect more data. 
 -	If the results are bad, use up-sampling or down-sampling or weights to put more emphasis on the rare cases.
 -	Under-sample or down-scale.
@@ -115,4 +116,7 @@ How to deal with imbalanced data:
 -	Try different methods. 
 
 
+![](images/bar-chart.png)
+![](images/search-2.png)
+![](images/search-1.png)
 
