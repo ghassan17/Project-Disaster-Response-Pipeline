@@ -62,7 +62,7 @@ Type text into the app, and this will return classification results for all 36 c
   
 ├── ETL-Pipeline-Peparation:
    └── ETL Pipeline Preparation.ipynb #initial template 
-   └── Disaster_Response_DB.db
+   └── DisasterResponse.db
 
 ├── ML-Pipeline-Peparation:
       └──  classifer.pkl #this will be produced once the pipeline is excecuted 
