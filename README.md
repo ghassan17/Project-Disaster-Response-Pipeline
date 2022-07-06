@@ -65,7 +65,7 @@ Type text into the app, and this will return classification results for all 36 c
    └── Disaster_Response_DB.db
 
 ├── ML-Pipeline-Peparation:
-      └──  classifer.pkl
+      └──  classifer.pkl #this will be produced once the pipeline is excecuted 
       └── ML Pipeline Preparation.ipynb
 ├── models:
       └── train_classifier.py #file contain the script to create ML pipeline
