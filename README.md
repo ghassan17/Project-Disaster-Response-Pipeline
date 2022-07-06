@@ -6,7 +6,8 @@
  * [Project Structure](#project-structure)
  * [Files](#files)
  * [How To Run Python Scripts](#how-to-run-python-scripts)
- * [Acknowledgements](#Acknowledgements)
+ * [Acknowledgements](#acknowledgements)
+ * [Future Work](#future-work)
  
 
 ## **Installations**
@@ -91,13 +92,27 @@ The project includes a web app where an emergency worker can input a new message
 
 3. Run your web app: `python run.py`
 
-4. Click the `PREVIEW` button to open the homepage
+4. Click http://0.0.0.0:3001 to open the homepage
 
-
+http://disaster-response-app.s3-website.eu-west-2.amazonaws.com 
 
 ## **Acknowledgements**
 
 * [Udacity](https://www.udacity.com/) for the web app starter code
 * [Appen](https://appen.com/) for providing the relevant dataset to train the model 
+
+
+## **Future Work**
+
+How to deal with imbalanced data: 
+-	Use a confusion matrix to see if rare cases are correctly classified equal proportion. 
+-	Collect more data. 
+-	If the results are bad, use up-sampling or down-sampling or weights to put more emphasis on the rare cases.
+-	Under-sample or down-scale.
+-	Over-sampling or up-scaling. 
+-	Combine under-sampling with over-sampling to get more balanced data set; combine both techniques to get a dataset that's closer to 50/50.
+-	Assign each observation a weight.
+-	Try different methods. 
+
 
 
